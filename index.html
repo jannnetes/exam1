@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма та таблиця</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="w3-container w3-center">
+    <form id="myForm" class="w3-container w3-card-4 w3-light-grey">
+        <label for="course">Номер курсу:</label>
+        <select id="course" name="course">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+        </select>
+
+        <label for="specialty">Спеціальність:</label>
+        <select id="specialty" name="specialty">
+            <option value="Комп'ютерні науки">Комп'ютерні науки</option>
+            <option value="Прикладна механіка">Прикладна механіка</option>
+            <option value="Менеджмент">Менеджмент</option>
+        </select>
+
+        <button type="button" onclick="submitForm()">Відправити</button>
+    </form>
+
+    <div id="resultContainer"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
